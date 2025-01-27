@@ -1,4 +1,4 @@
-import  { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import NavBar from '../Components/NavBar';
 import { Outlet } from 'react-router-dom';
 import Footer from '../Components/Footer';

@@ -10,7 +10,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/" 
-                    className={({ isActive }) => isActive ? "md:text-[#22ecf3]" : ""}
+                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
                 >
                     Home
                 </NavLink>
@@ -18,7 +18,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/statistics" 
-                    className={({ isActive }) => isActive ? "md:text-[#9538E2]" : ""}
+                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
                 >
                     Statistics
                 </NavLink>
@@ -26,15 +26,15 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/dashboard" 
-                    className={({ isActive }) => isActive ? "md:text-[#9538E2]" : ""}
+                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
                 >
                     Dashboard
                 </NavLink>
             </li>
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
-                    to="/gadgetnews" 
-                    className={({ isActive }) => isActive ? "md:text-[#9538E2]" : ""}
+                    to="/contactUs" 
+                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
                 >
                     Contact Us
                 </NavLink>
@@ -78,17 +78,17 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end gap-4">
                 <NavLink to="dashboard/cart" className="relative">
-                    <button className="btn text-xl">
+                    <button className="btn text-xl rounded-full">
                     <IoCartSharp />
                     </button>
-                    <div className="badge bg-pink-500 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full">
+                    <div className="badge  bg-pink-500 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-2xl">
     {/* {cartCount} */}
 </div>
 
                 </NavLink>
 
                 <NavLink to="dashboard/wishlist" className="relative">
-                    <button className="btn text-xl">
+                    <button className="btn text-xl rounded-full">
                     <FaHeartCirclePlus />
                     </button>
                     <div className="badge bg-violet-400 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full">
