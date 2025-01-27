@@ -18,7 +18,7 @@
         "price": 1199.99,
         "desc": "A powerful laptop for gaming and professional use.",
         "spec": ["32GB RAM", "1TB SSD", "NVIDIA RTX 3060"],
-        "stock": true,
+        "stock": false,
         "rating": 4.8
     },
     {
@@ -40,7 +40,7 @@
         "price": 2399.99,
         "desc": "A sleek and lightweight laptop for everyday use.",
         "spec": ["16GB RAM", "512GB SSD", "Intel i7 Processor"],
-        "stock": true,
+        "stock": false,
         "rating": 4.6
     },
     {
@@ -84,7 +84,7 @@
         "price": 499.99,
         "desc": "A premium smartwatch with advanced health monitoring.",
         "spec": ["ECG", "Sleep Tracking", "Bluetooth"],
-        "stock": true,
+        "stock": false,
         "rating": 4.9
     },
     {
@@ -117,7 +117,7 @@
         "price": 799.99,
         "desc": "A budget-friendly laptop with decent performance.",
         "spec": ["8GB RAM", "256GB SSD", "Intel i5 Processor"],
-        "stock": true,
+        "stock": false,
         "rating": 4.2
     }
 ]

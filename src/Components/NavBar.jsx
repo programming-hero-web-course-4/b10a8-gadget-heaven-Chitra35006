@@ -1,16 +1,45 @@
 import { IoCartSharp } from "react-icons/io5";
 import { FaHeartCirclePlus } from "react-icons/fa6";
 import { NavLink, useLocation } from "react-router-dom";
-
+import { useState, useEffect } from 'react';
+import { getCartCount, getWishlistCount } from '../CartFunction/Utilities'
 const NavBar = () => {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
+    const [cartCount, setCartCount] = useState(0);
+    const [wishlistCount, setWishlistCount] = useState(0);
+
+    useEffect(() => {
+        // Update initial counts
+        setCartCount(getCartCount());
+        setWishlistCount(getWishlistCount());
+
+        // Add event listeners for updates
+        const handleStorageChange = () => {
+            setCartCount(getCartCount());
+            setWishlistCount(getWishlistCount());
+        };
+
+        const handleWishlistChange = () => {
+            setWishlistCount(getWishlistCount());
+        };
+
+        window.addEventListener('storage', handleStorageChange);
+        document.addEventListener('cartUpdated', handleStorageChange);
+        document.addEventListener('wishlistUpdated', handleWishlistChange);
+
+        return () => {
+            window.removeEventListener('storage', handleStorageChange);
+            document.removeEventListener('cartUpdated', handleStorageChange);
+            document.removeEventListener('wishlistUpdated', handleWishlistChange);
+        };
+    }, []);
     const links = (
         <>
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/" 
-                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : " font-medium text-violet-900"}
                 >
                     Home
                 </NavLink>
@@ -18,7 +47,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/statistics" 
-                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : " font-medium text-violet-900"}
                 >
                     Statistics
                 </NavLink>
@@ -26,7 +55,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/dashboard" 
-                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : " font-medium text-violet-900"}
                 >
                     Dashboard
                 </NavLink>
@@ -34,7 +63,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/contactUs" 
-                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : " font-medium text-violet-900"}
                 >
                     Contact Us
                 </NavLink>
@@ -82,7 +111,7 @@ const NavBar = () => {
                     <IoCartSharp />
                     </button>
                     <div className="badge  bg-pink-500 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-2xl">
-    {/* {cartCount} */}
+    {cartCount}
 </div>
 
                 </NavLink>
@@ -91,8 +120,8 @@ const NavBar = () => {
                     <button className="btn text-xl rounded-full">
                     <FaHeartCirclePlus />
                     </button>
-                    <div className="badge bg-violet-400 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full">
-                        {/* {wishlistCount} */}
+                    <div className="badge bg-violet-600 badge-md text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full">
+                        {wishlistCount}
                     </div>
                 </NavLink>
 
