@@ -10,7 +10,7 @@ const Categories = () => {
         .then(data =>setCategories(data))
     },[])
     return (
-        <div className='flex flex-col gap-12  items-center py-8 rounded-xl shadow-lg' >
+        <div className='flex flex-col gap-12  items-center py-8 rounded-xl shadow-2xl' >
         {
             categories.map(category => <Category  category={category} key={category.id}/> )
         }

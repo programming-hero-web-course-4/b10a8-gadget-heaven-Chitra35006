@@ -10,7 +10,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/" 
-                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
                 >
                     Home
                 </NavLink>
@@ -18,7 +18,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/statistics" 
-                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
                 >
                     Statistics
                 </NavLink>
@@ -26,7 +26,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/dashboard" 
-                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
                 >
                     Dashboard
                 </NavLink>
@@ -34,7 +34,7 @@ const NavBar = () => {
             <li className={isHomePage ? "text-white" : "text-black"}>
                 <NavLink 
                     to="/contactUs" 
-                    className={({ isActive }) => isActive ? "md:text-pink-200 font-bold" : ""}
+                    className={({ isActive }) => isActive ? "md:text-indigo-900 py-2 px-4 rounded-xl bg-pink-200 font-bold" : ""}
                 >
                     Contact Us
                 </NavLink>
