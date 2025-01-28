@@ -54,13 +54,16 @@ const Cart = () => {
                 <button onClick={sortByPrice} className='text-xl btn text-violet-600  border-violet-600 rounded-4xl'>
                     Sort By Price <FaSortNumericDownAlt />
                 </button>
-                <button 
-                    onClick={handlePurchase}  // Trigger purchase action
-                    className='text-xl md:ml-4 px-4 py-2 text-white bg-gradient-to-r from-pink-300 via-violet-700 to-violet-900 rounded-4xl' 
-                    disabled={products.length === 0}
-                >
-                    Purchase
-                </button>
+                <button
+  onClick={handlePurchase}
+  className={`text-xl md:ml-4 px-4 py-2 rounded-4xl text-white bg-gradient-to-r from-pink-300 via-violet-700 to-violet-900
+    hover:from-violet-900 hover:via-violet-700 hover:to-pink-400`}
+  disabled={products.length === 0}
+>
+  Purchase
+</button>
+
+
                 </div>
             </div>
         </div>

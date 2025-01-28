@@ -88,7 +88,7 @@ const DetailsPage = () => {
                 <button
   onClick={() => handleAddToCart(product)}
   disabled={!stock} // Disable the button if stock is false
-  className={`btn rounded-2xl ${
+  className={`btn rounded-2xl transform transition-transform duration-300 hover:scale-105 ${
     stock
       ? "bg-violet-600 text-white" // Show color if stock is true
       : "bg-gray-400 text-gray-700 cursor-not-allowed" // Show gray color and disable if stock is false

@@ -26,7 +26,7 @@ const Products = () => {
             <div className="col-span-1 md:col-span-3 text-center mt-4">
                 <button 
                     onClick={toggleShowAll} 
-                    className="btn btn-primary">
+                    className="btn rounded-2xl  bg-violet-600 text-white">
                     {showAll ? "Show Less" : "View All"}
                 </button>
             </div>

@@ -1,4 +1,4 @@
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 //  get all item ls
 const getAllCarts = () => {
@@ -30,7 +30,7 @@ const addToCart = (product) => {
     return cart.length;
 };
 
-// Clear all items ls
+// Clear all items
 const clearCart = () => {
     localStorage.removeItem('cart');
     document.dispatchEvent(new Event('cartUpdated'));

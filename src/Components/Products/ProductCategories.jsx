@@ -17,13 +17,15 @@ const ProductCategories = ({product}) => {
     Price: {price} <span className="text-pink-500 text-xl">$</span>
   </p>
   <div className="card-actions">
-    <Link
-      to={`/product/${id}`}
-      className="btn text-[#9538E2] border-[#9538E2] btn-outline rounded-3xl hover:bg-violet-600 hover:text-white"
-    >
-      View Details
-    </Link>
-  </div>
+  <Link
+    to={`/product/${id}`}
+    className="btn text-[#9538E2] border-[#9538E2] btn-outline rounded-3xl hover:bg-violet-600 hover:text-white 
+      transform transition-transform duration-300 hover:scale-105"
+  >
+    View Details
+  </Link>
+</div>
+
 </div>
 
       </div>
