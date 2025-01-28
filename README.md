@@ -1,6 +1,6 @@
  # Project Name: Gadget Heaven
 ## :::Description:::
-This project is Gadget Haven – a cutting-edge online store for all your gadget needs! Built with React, this single-page application offers an intuitive and dynamic interface, ensuring users enjoy a smooth and engaging shopping journey. From browsing to purchasing, the platform is crafted to deliver convenience and excitement for gadget enthusiasts everywhere.
+This project is Gadget Heaven – a cutting-edge online store for all your gadget needs! Built with React, this single-page application offers an intuitive and dynamic interface, ensuring users enjoy a smooth and engaging shopping journey. From browsing to purchasing, the platform is crafted to deliver convenience and excitement for gadget enthusiasts everywhere.
 
 ## :::Project Features:::
 1. **User Friendly Interactivity**
