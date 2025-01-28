@@ -69,12 +69,12 @@ const Cart = () => {
         <div className='mt-5 flex-col gap-2 flex'>
             {products.map(product => (
                 <div key={product.id} className='flex items-center justify-between rounded-xl shadow-lg py-4 px-8 border-1 border-violet-200 my-6'>
-                    <div className="flex  flex-col md:flex-row gap-4 items-center justify-center">
+                    <div className="flex  flex-col md:flex-row gap-4 md:gap-8 items-center justify-center">
   {/* Image Section */}
   <div className="text-center">
     <img
       src={product.img}
-      className="w-36 mx-auto border-l-4 border-r-4 border-violet-600 rounded-xl"
+      className="w-40 mx-auto border-l-4 border-r-4 border-violet-600 rounded-xl"
       alt={product.title}
     />
   </div>

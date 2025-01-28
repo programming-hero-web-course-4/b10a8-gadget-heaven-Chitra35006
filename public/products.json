@@ -185,6 +185,40 @@
         "spec": ["ECG", "Blood Pressure", "Sleep Tracking"],
         "stock": true,
         "rating": 4.7
+    },
+    {
+        "id": 18,
+        "title": "Sony WF-1000XM5",
+        "category": "Earbuds",
+        "img": "https://i.ibb.co/hXhw74m/resize-17380371031ro.jpg",
+        "price": 299.99,
+        "desc": "Top-tier noise-canceling earbuds with superior sound quality and long battery life.",
+        "spec": ["Noise-Canceling", "Hi-Res Audio", "8-Hour Battery"],
+        "stock": true,
+        "rating": 4.8
+    },
+    {
+        "id": 19,
+        "title": "Apple AirPods Pro (2nd Generation)",
+        "category": "Earbuds",
+        "img": "https://i.ibb.co/xHrDpZw/resize-17-Vyd.jpg",
+        "price": 249.99,
+        "desc": "Apple's flagship earbuds with exceptional ANC and seamless integration with Apple devices.",
+        "spec": ["Spatial Audio", "Adaptive Transparency", "6-Hour Battery"],
+        "stock": true,
+        "rating": 4.7
+    },
+    {
+        "id": 20,
+        "title": "Jabra Elite 7 Pro",
+        "category": "Earbuds",
+        "img": "https://i.ibb.co/vwpwv7F/IMG-0115-Edited.jpg",
+        "price": 199.99,
+        "desc": "Durable earbuds with advanced call clarity and balanced sound, great for work and fitness.",
+        "spec": ["Adjustable ANC", "Multipoint Connectivity", "IP57 Rated"],
+        "stock": false,
+        "rating": 4.5
     }
+    
     
 ]

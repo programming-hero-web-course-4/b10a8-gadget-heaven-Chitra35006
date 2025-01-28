@@ -6,7 +6,7 @@ const Category = ({category}) => {
     const { category: categoryName } = category; 
     return (
         <div>
-             <Link to={`/products/${categoryName}`} className="px-4 py-2 rounded-xl text-[#9538E2] border-l-[#9538E2] border-l-4 border-r-4 border-b-1 font-semibold">
+             <Link to={`/products/${categoryName}`} className="px-4  py-2 rounded-xl text-[#9538E2] border-l-[#9538E2] border-l-4 border-r-4 border-b-1 font-semibold">
                 {categoryName}
             </Link>
         </div>

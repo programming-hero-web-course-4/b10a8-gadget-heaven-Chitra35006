@@ -17,9 +17,13 @@
         "id": 4,
         "category": "Watches"
     },
-
     {
         "id": 5,
+        "category": "Earbuds"
+    },
+
+    {
+        "id": 6,
         "category": "Accessories"
     }
 
