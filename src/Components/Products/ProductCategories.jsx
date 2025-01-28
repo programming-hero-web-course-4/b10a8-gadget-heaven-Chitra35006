@@ -12,7 +12,7 @@ const ProductCategories = ({product}) => {
                    <img src={img} className="rounded-xl w-56 " />
                </figure>
                <div className="card-body text-left">
-  <h2 className="card-title text-violet-700">{title}</h2>
+  <h2 className="card-title text-violet-700 text-xl">{title}</h2>
   <p className="text-black font-semibold text-xl">
     Price: {price} <span className="text-pink-500 text-xl">$</span>
   </p>
