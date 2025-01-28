@@ -119,5 +119,72 @@
         "spec": ["8GB RAM", "256GB SSD", "Intel i5 Processor"],
         "stock": false,
         "rating": 4.2
+    },
+    {
+        "id": 12,
+        "title": "Apple MacBook Pro 16-inch",
+        "img": "https://i.ibb.co/7KQ3dNS/resize-173803564215233927140e0e2d6ddfa78a634cd0c0557063bd8c.jpg",
+        "category": "Laptops",
+        "price": 2399.99,
+        "desc": "A premium laptop with advanced processing power and retina display.",
+        "spec": ["16GB RAM", "512GB SSD", "Apple M1 Pro Chip"],
+        "stock": true,
+        "rating": 4.8
+    },
+    {
+        "id": 13,
+        "title": "Pixel 9 Pro XL",
+        "img": "https://i.ibb.co/3yzYW4h/Pixel-9-Pro-Obsidian-6557.jpg",
+        "category": "Phones",
+        "price": 899.99,
+        "desc": "A flagship smartphone with cutting-edge technology.",
+        "spec": ["256GB Storage", "48MP Camera", "4500mAh Battery"],
+        "stock": true,
+        "rating": 4.6
+    },
+    {
+        "id": 14,
+        "title": "Samsung Galaxy S21",
+        "img": "https://i.ibb.co/hW6Cjbj/Galaxy-S21-2561.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "desc": "A powerful and sleek smartphone with a stunning display.",
+        "spec": ["128GB Storage", "64MP Camera", "4000mAh Battery"],
+        "stock": true,
+        "rating": 4.7
+    },
+    {
+        "id": 15,
+        "title": "Garmin Forerunner 945",
+        "img": "https://i.ibb.co/rFpPTNf/resize-1738w.jpg",
+        "category": "Watches",
+        "price": 499.99,
+        "desc": "A premium smartwatch with advanced health monitoring.",
+        "spec": ["ECG", "Sleep Tracking", "Bluetooth"],
+        "stock": false,
+        "rating": 4.9
+    },
+    {
+        "id": 16,
+        "title": "Apple Watch Series 7",
+        "img": "https://i.ibb.co/DQgcMqs/LIGE-9866-Men-Quartz-Watch-1.jpg",
+        "category": "Watches",
+        "price": 399.99,
+        "desc": "A premium smartwatch with an always-on display and advanced fitness tracking.",
+        "spec": ["Blood Oxygen", "Heart Rate Monitoring", "GPS"],
+        "stock": true,
+        "rating": 4.8
+    },
+    {
+        "id": 17,
+        "title": "Samsung Galaxy Watch 4",
+        "category": "Watches",
+        "img": "https://i.ibb.co/fCjs1Dv/galaxy-watch4-design-seamless-mo.webp",
+        "price": 249.99,
+        "desc": "A stylish and feature-packed smartwatch with health tracking capabilities.",
+        "spec": ["ECG", "Blood Pressure", "Sleep Tracking"],
+        "stock": true,
+        "rating": 4.7
     }
+    
 ]

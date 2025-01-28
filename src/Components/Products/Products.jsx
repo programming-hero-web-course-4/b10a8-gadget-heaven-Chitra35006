@@ -15,7 +15,7 @@ const Products = () => {
         setShowAll(!showAll);
     };
 
-    const displayedProducts = showAll ? products : products.slice(0, 6);
+    const displayedProducts = showAll ? products : products.slice(0, 8);
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {displayedProducts.length > 0 
